@@ -70,3 +70,30 @@ O arquivo `app.py` permite:
 ```bash
 pip install -r requirements.txt
 playwright install
+
+2. Rodar o coletor
+python coletar_vagas.py
+
+3. Rodar o dashboard
+streamlit run app.py
+
+📁 Estrutura do Projeto
+├── coletar_vagas.py
+├── app.py
+├── vagas.csv
+├── vagas_historico.csv
+└── README.md
+
+Observações
+O coletor funciona apenas com Python 3.10 devido a limitações do Playwright no Windows.
+
+A lista de empresas pode ser expandida facilmente.
+
+O histórico é atualizado automaticamente a cada execução.
+
+📜 Licença
+MIT License.
+
+🤝 Contribuições
+Pull requests são bem-vindos!
+Sinta-se à vontade para sugerir novas empresas, melhorias no parser ou novas funcionalidades.
